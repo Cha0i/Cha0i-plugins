@@ -1,4 +1,4 @@
-package com.example;
+package com.cha0iplugins;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -14,15 +14,15 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "Cha0i plugins"
 )
-public class ExamplePlugin extends Plugin
+public class cha0iplugins extends Plugin
 {
 	@Inject
 	private Client client;
 
 	@Inject
-	private ExampleConfig config;
+	private cha0ipluginsConfig config;
 
 	@Override
 	protected void startUp() throws Exception
@@ -46,8 +46,9 @@ public class ExamplePlugin extends Plugin
 	}
 
 	@Provides
-	ExampleConfig provideConfig(ConfigManager configManager)
+	cha0ipluginsConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(ExampleConfig.class);
+		return configManager.getConfig(cha0ipluginsConfig.class);
 	}
+
 }

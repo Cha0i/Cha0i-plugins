@@ -1,16 +1,16 @@
-package com.example;
+package com.cha0iplugins;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
-public interface ExampleConfig extends Config
+@ConfigGroup("Cha0i Plugins")
+public interface cha0ipluginsConfig extends Config
 {
 	@ConfigItem(
 		keyName = "greeting",
 		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		description = "We be sideloading like a mf"
 	)
 	default String greeting()
 	{
